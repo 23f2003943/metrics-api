@@ -45,10 +45,3 @@ def stats(values: str = Query(...)):
         "mean": sum(nums)/len(nums)
     }
 
-    app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["https://dash-kac954.example.com"],
-    allow_credentials=False,
-    allow_methods=["GET", "OPTIONS"],
-    allow_headers=["*"],
-)
